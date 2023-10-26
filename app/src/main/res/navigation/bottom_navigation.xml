@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_navigation"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.prakmobile7tugas.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_filmSection"
+            app:destination="@id/filmSection" />
+    </fragment>
+    <fragment
+        android:id="@+id/ticketFragment"
+        android:name="com.example.prakmobile7tugas.TicketFragment"
+        android:label="fragment_ticket"
+        tools:layout="@layout/fragment_ticket" />
+    <activity
+        android:id="@+id/filmSection"
+        android:name="com.example.prakmobile7tugas.FilmSection"
+        android:label="activity_film_section"
+        tools:layout="@layout/activity_film_section" />
+    <activity
+        android:id="@+id/checkout"
+        android:name="com.example.prakmobile7tugas.Checkout"
+        android:label="activity_checkout"
+        tools:layout="@layout/activity_checkout" >
+        <argument
+            android:name="Judul"
+            app:argType="string"
+            app:nullable="true" />
+    </activity>
+    <activity
+        android:id="@+id/detailsAvenger"
+        android:name="com.example.prakmobile7tugas.DetailsAvenger"
+        android:label="activity_details_avenger"
+        tools:layout="@layout/activity_details_avenger" />
+    <activity
+        android:id="@+id/detailsGranturismo"
+        android:name="com.example.prakmobile7tugas.DetailsGranturismo"
+        android:label="activity_details_granturismo"
+        tools:layout="@layout/activity_details_granturismo" />
+    <activity
+        android:id="@+id/detailsMissionimposible"
+        android:name="com.example.prakmobile7tugas.DetailsMissionimposible"
+        android:label="activity_details_missionimposible"
+        tools:layout="@layout/activity_details_missionimposible" />
+    <activity
+        android:id="@+id/detailsSpectre"
+        android:name="com.example.prakmobile7tugas.DetailsSpectre"
+        android:label="activity_details_spectre"
+        tools:layout="@layout/activity_details_spectre" />
+</navigation>

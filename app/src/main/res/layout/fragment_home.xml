@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment"
+    android:background="@color/lightblue">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/container"
+        android:layout_margin="15dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:fontFamily="@font/inter"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="5dp"
+            android:text="Welcome back!"
+            android:textColor="@color/kuning"
+            android:textSize="15dp"></TextView>
+
+        <TextView
+            android:id="@+id/getusername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Standingmendoan"
+            android:textSize="20dp"></TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Film Minggu Ini"
+            android:fontFamily="@font/inter"
+            android:paddingLeft="15dp"
+            android:paddingTop="20dp"
+            android:textSize="25dp"></TextView>
+
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="15dp"
+            android:background="@drawable/customcontainer">
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pesan Makananmu"
+            android:fontFamily="@font/inter"
+            android:textSize="25dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="15dp"></TextView>
+
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="150dp"
+            android:background="@drawable/transparentbordergrey"
+            android:layout_marginStart="15dp">
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/pesanButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="75dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/customcontainer">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Beli Sekarang!"
+                android:textAlignment="center"
+                android:background="@color/lightblue"
+                android:textColor="@color/kuning"
+                android:fontFamily="@font/inter"
+                android:textSize="23dp"></TextView>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+
+</FrameLayout>
